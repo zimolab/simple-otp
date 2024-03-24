@@ -1,6 +1,7 @@
 .venv/
 .idea/
 .vscode/
+install.py
 __pycache__/
 build/
 dist/
