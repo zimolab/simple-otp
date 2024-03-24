@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "simple-otp"
+version = "0.1.1"
+description = "A simple OTP generator based on pyotp and PyGUIAdapter."
+authors = ["zimolab <zimolab@aliyun.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+pyotp = "^2.9.0"
+pyguiadapter = "^0.2.4"
+pyperclip = "^1.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,12 @@
+.venv/
+.idea/
+.vscode/
+__pycache__/
+build/
+dist/
+.pyc
+.pyo
+*.pyc
+*.pyo
+*.py.class
+*.py.swp
