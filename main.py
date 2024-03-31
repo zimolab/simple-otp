@@ -21,13 +21,7 @@ def main():
     gui.selection_window_config.icon_mode = False
 
     gui.add(simple_otp.timebased.timebased_otp, display_name="Time-based OTP")
-    gui.add(simple_otp.counterbased.counterbased_otp, display_name="Counter-based OTP", widgets_config={
-        "counter": {
-            "type": "IntSpinBox",
-            "min_value": 0,
-            "max_value": 2147483647,
-        }
-    })
+    gui.add(simple_otp.counterbased.counterbased_otp, display_name="Counter-based OTP")
     gui.add(simple_otp.genkey.generate_secret_key, display_name="Generate Secret Key")
     gui.run()
 

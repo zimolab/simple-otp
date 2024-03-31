@@ -13,14 +13,14 @@ def generate_secret_key(secret_key_format: Literal["hex", "base64"] = "base64", 
     :param copy_to_clipboard: <b> Whether copy the generated OPT to the system clipboard</b>
     :return:
 
-    @begin
+    @widgets
     [secret_key_format]
-    type="ComboBox"
+    widget_class="ComboBox"
     label="Secret Key Format"
 
     [copy_to_clipboard]
-    type="CheckBox"
-    label="Copy"
+    widget_class="CheckBox"
+    label=""
     text="Copy generated OTP to clipboard?"
     @end
     """

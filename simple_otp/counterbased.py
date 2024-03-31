@@ -12,21 +12,23 @@ def counterbased_otp(secret_key: str, counter: int = 0, copy_to_clipboard: bool 
     :param copy_to_clipboard: <b> Whether copy the generated OPT to the system clipboard</b>
     :return:
 
-    @begin
+    @widgets
     [secret_key]
-    type="LineEdit"
+    widget_class="LineEdit"
     label="Secret Key"
     echo_mode="Password"
     clear_button=true
     placeholder="input the secret you here"
 
     [counter]
-    type="IntSpinBox"
+    widget_class="IntSpinBox"
     label="Counter"
+    min_value=0
+    max_value=2147483647
 
     [copy_to_clipboard]
-    type="CheckBox"
-    label="Copy"
+    widget_class="CheckBox"
+    label=""
     text="Copy generated OTP to clipboard?"
     @end
     """
