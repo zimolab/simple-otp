@@ -8,16 +8,15 @@ import simple_otp.timebased
 def main():
     gui = GUIAdapter()
 
-    gui.execution_window_config.show_function_result_dialog = False
-    gui.execution_window_config.print_function_result = False
-    gui.execution_window_config.print_function_started_info = False
-    gui.execution_window_config.print_function_finished_info = False
+    gui.execution_window_config.show_func_result_dialog = False
+    gui.execution_window_config.print_func_result = False
+    gui.execution_window_config.print_func_start_msg = False
+    gui.execution_window_config.print_func_finish_msg = False
 
-    gui.execution_window_config.show_function_error_dialog = True
-    gui.execution_window_config.function_error_dialog_message = "Error: {}"
-    gui.execution_window_config.function_error_message = "Error: {}"
+    gui.execution_window_config.print_func_error = True
+    gui.execution_window_config.show_func_error_dialog = True
 
-    gui.execution_window_config.auto_clear_output = False
+    gui.execution_window_config.autoclear_output = True
     gui.selection_window_config.icon_mode = False
 
     gui.add(simple_otp.timebased.timebased_otp, display_name="Time-based OTP")

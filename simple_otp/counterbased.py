@@ -14,11 +14,10 @@ def counterbased_otp(secret_key: str, counter: int = 0, copy_to_clipboard: bool 
 
     @widgets
     [secret_key]
-    widget_class="LineEdit"
     label="Secret Key"
     echo_mode="Password"
     clear_button=true
-    placeholder="input the secret you here"
+    placeholder="Input the secret key here"
 
     [counter]
     widget_class="IntSpinBox"

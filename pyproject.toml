@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.10, <3.11"
 pyotp = "^2.9.0"
-pyguiadapter = "^0.2.13"
+pyguiadapter = "^0.2.14"
 pyperclip = "^1.8.2"
 pyinstaller = "^6.5.0"
 
