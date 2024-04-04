@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simple-otp"
-version = "0.1.3"
+version = "0.1.4"
 description = "A simple OTP generator based on pyotp and PyGUIAdapter."
 authors = ["zimolab <zimolab@aliyun.com>"]
 readme = "README.md"
