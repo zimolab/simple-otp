@@ -24,13 +24,13 @@ files = [
 
 [[package]]
 name = "function2widgets"
-version = "0.6.3"
+version = "0.6.5"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "function2widgets-0.6.3-py3-none-any.whl", hash = "sha256:d06236d63ed7abdd4f90854ec76a9abcb6a515fcaba59a963a36dad80a27d679"},
-    {file = "function2widgets-0.6.3.tar.gz", hash = "sha256:ce155d9014f6e3f2d5833770138d18805550a535ad9a1d426353690f8b5e2525"},
+    {file = "function2widgets-0.6.5-py3-none-any.whl", hash = "sha256:46c808ec3c7d38e2bb3b8ee537003a9b32452bb929070ac5415b05b5f891091b"},
+    {file = "function2widgets-0.6.5.tar.gz", hash = "sha256:b72612f9b8962eab4ac5662a216977ed5774c54a0aab59f817062545c84cf27a"},
 ]
 
 [package.dependencies]
@@ -78,17 +78,17 @@ files = [
 
 [[package]]
 name = "pyguiadapter"
-version = "0.2.14"
+version = "0.2.15"
 description = "turn (almost) any python functions into a gui in a few lines of code"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "pyguiadapter-0.2.14-py3-none-any.whl", hash = "sha256:68e1e3db7861bb9b4de4a5bd078143f30c85195b899e633bfe4124dc42a36115"},
-    {file = "pyguiadapter-0.2.14.tar.gz", hash = "sha256:c6f37281dbcf4b67d28cca20f577eac3a413df6f8d4e666a695f8ec11c0bbd7f"},
+    {file = "pyguiadapter-0.2.15-py3-none-any.whl", hash = "sha256:3d0782359d3b8ec10b9618a73fab47301f8cd561ae06bd4658b253e1afc0366e"},
+    {file = "pyguiadapter-0.2.15.tar.gz", hash = "sha256:d42ba4d1fed589cebd831ac076cc53684adc5b22ba4a30ed96ada2709efb69de"},
 ]
 
 [package.dependencies]
-function2widgets = ">=0.6.3"
+function2widgets = ">=0.6.5"
 
 [[package]]
 name = "pyinstaller"
@@ -292,4 +292,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10, <3.11"
-content-hash = "2b51cdbf677c47d415cab444e17cf4c648a73013c49002b353dda71bb24e428b"
+content-hash = "043c8e4fc48befa3e58ece0f1f01a6263b1563c3bf585700d84642cdd7a30613"
