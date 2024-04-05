@@ -4,10 +4,15 @@ import simple_otp.counterbased
 import simple_otp.genkey
 import simple_otp.timebased
 
+APP_NAME = "Simple OTP"
+
 
 def main():
     gui = GUIAdapter()
 
+    gui.selection_window_config.title = APP_NAME
+
+    gui.execution_window_config.title = APP_NAME
     gui.execution_window_config.show_func_result_dialog = False
     gui.execution_window_config.print_func_result = False
     gui.execution_window_config.print_func_start_msg = False
