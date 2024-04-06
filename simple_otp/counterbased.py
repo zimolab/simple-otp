@@ -7,28 +7,29 @@ def counterbased_otp(secret_key: str, counter: int = 0, copy_to_clipboard: bool 
     """
     Generate a counter-based One Time Password(OTP) from the given secret key.
 
-    :param secret_key: <b>The secret key in base32</b>
-    :param counter: <b>The OTP HMAC counter</b>
-    :param copy_to_clipboard: <b> Whether copy the generated OPT to the system clipboard</b>
+    :param secret_key: the secret key in base32
+    :param counter: the OTP HMAC counter
+    :param copy_to_clipboard: copy the generated OTP to the system clipboard
     :return:
 
     @widgets
     [secret_key]
+    widget_class="LineEdit"
     label="Secret Key"
     echo_mode="Password"
     clear_button=true
-    placeholder="Input the secret key here"
+    placeholder="input the secret you here"
+
+    [copy_to_clipboard]
+    widget_class="CheckBox"
+    label="Copy"
+    text="Copy to clipboard"
 
     [counter]
     widget_class="IntSpinBox"
     label="Counter"
     min_value=0
     max_value=2147483647
-
-    [copy_to_clipboard]
-    widget_class="CheckBox"
-    label=""
-    text="Copy generated OTP to clipboard?"
     @end
     """
     if not secret_key:

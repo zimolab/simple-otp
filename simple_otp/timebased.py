@@ -7,8 +7,8 @@ def timebased_otp(secret_key: str, copy_to_clipboard: bool = True):
     """
     Generate a time-based One Time Password(OTP) from the given secret key.
 
-    :param secret_key: <b>The secret key in base32</b>
-    :param copy_to_clipboard: <b> Whether copy the generated OPT to the system clipboard</b>
+    :param secret_key: the secret key in base32
+    :param copy_to_clipboard: copy the generated OTP to the system clipboard
     :return:
 
     @widgets
@@ -21,8 +21,8 @@ def timebased_otp(secret_key: str, copy_to_clipboard: bool = True):
 
     [copy_to_clipboard]
     widget_class="CheckBox"
-    label=""
-    text="Copy generated OTP to clipboard?"
+    label="Copy"
+    text="Copy to clipboard"
     @end
     """
     if not secret_key:

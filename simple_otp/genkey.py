@@ -9,8 +9,8 @@ def generate_secret_key(secret_key_format: Literal["hex", "base64"] = "base64", 
     """
     Generate a secret key, compatible with Google Authenticator and other OTP apps.
 
-    :param secret_key_format: <b>Generated key format: base32 or hex</b>
-    :param copy_to_clipboard: <b> Whether copy the generated OPT to the system clipboard</b>
+    :param secret_key_format: generated key format, base32 or hex
+    :param copy_to_clipboard: copy the generated OPT to the system clipboard
     :return:
 
     @widgets
@@ -20,8 +20,8 @@ def generate_secret_key(secret_key_format: Literal["hex", "base64"] = "base64", 
 
     [copy_to_clipboard]
     widget_class="CheckBox"
-    label=""
-    text="Copy generated OTP to clipboard?"
+    label="Copy"
+    text="Copy to clipboard"
     @end
     """
     secret_key_format = secret_key_format.lower()
